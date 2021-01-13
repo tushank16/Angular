@@ -1,0 +1,98 @@
+ 
+<h1>Welcome to OneConversion</h1>
+<!--
+<app-tasks></app-tasks>
+<h4>Lists of completed tasks</h4>
+
+<button   (click)="readMe()">Click Me</button>-->
+<!--<div *ngIf="showMsg" [ngStyle]='{color:colorname}'>  Showing this message from IF true statement</div>
+-->
+<!--
+<hr/>
+
+<div *ngIf="showMsg; then showThenMsg; else showElseMsg">IF  statement</div>
+<ng-template #showElseMsg>Showing ELSE message</ng-template> 
+<ng-template #showThenMsg>Showing THEN message</ng-template> 
+  
+
+<h4>ngSwitch Example</h4>       
+
+<div [ngSwitch]="switchValue">
+    <div *ngSwitchCase="1">Value Passed is 1</div>
+    <div *ngSwitchCase="2">Value Passed is 2</div>
+    <div *ngSwitchCase="3">Value Passed is 3</div>
+
+    <div *ngSwitchDefault>This is the default value</div>
+</div>
+<br>
+data Binding
+<hr><b>Interpation ep 17 </b>
+<br>
+<div>{{subTitle}}</div>
+<div>{{epNo}}</div>
+<div> {{user}}</div>
+<div> {{user.PNR}}    {{user.name}}</div>-->
+<!---Attribute Binding-->
+<!--
+<hr/>
+<br>
+<h4>Attribute Binding</h4>
+<a [href]="hrefVal">Google</a>
+-->
+
+<!--Event Binding  // JavaScript-->
+<!--
+<hr/>
+<h4>Event Binding</h4>
+<button (click)="showAlert()">Clickk Me</button>
+-->
+<!--2 way Data Binding  //using ngModel-->
+<!--
+<hr/>
+<h4>2 way Data Binding</h4>
+<input [(ngModel)]="firstName"/>
+<button (click)="readFirstName()">readFirstName</button>
+<div>{{ firstName}}</div>
+-->
+<!--Pipes-->
+<!--
+<hr/>
+<h2>Pipes</h2>
+<h4>1. Built in Pipes</h4>
+<div>
+    {{user.name |titlecase }}, {{user.name |uppercase }}, {{user.name | lowercase }},
+</div>
+
+<div>
+    {{user.PNR |currency:'EUR':'code'}}
+</div>
+
+<div>
+    {{user |json}},
+</div>
+<hr/>
+<h4>2. Parameterized  Pipes</h4>
+<div>Currency & date</div>
+<hr/>
+<h4>3. Chaining  Pipes</h4>
+<div>Using Multiple Pipes </div>
+<div>
+    {{user.DOB |date:'MMMM' |uppercase}}
+</div>
+<hr/>
+<h4>4. Custom  Pipes</h4>
+<ul>
+    <li *ngFor="let item of users">
+        <div [innerHTML] = "item.city | highlight:item.cityCode"> </div>
+    </li>
+</ul>
+-->
+<ul>
+    <li><a href="/product-edit">Product-Edit</a></li>
+    <li><a href="/product-view">Product-View</a></li>
+    <li><a href="/products">Products</a></li>
+    <li><a href="/product-id">Product-id</a></li>
+    <li><a href="/products">Products</a></li>
+</ul>
+
+<router-outlet></router-outlet>
